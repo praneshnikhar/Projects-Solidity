@@ -4,7 +4,77 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "myMap",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "remove",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_i",
+						"type": "uint256"
+					}
+				],
+				"name": "set",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +103,11 @@
 	},
 	"sources": {
 		"contracts/mapping.sol": {
-			"keccak256": "0x0924abbe84af3135ec0b5366abaefbdf0a925414b9de4fdaf896fa2d53b06dc6",
+			"keccak256": "0xabd9288d691fc8e0d88c8a1b71455e3547bb28cfe38a98def5026f410125a88f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://558b5d941753ce7ba86359a5455ab39a70b7779fa4e634363f637da3b7eb7864",
-				"dweb:/ipfs/Qmf3QHBDfAuQRKnNNncvnTEonhgAfvzrXHaw5HoZPDeJw5"
+				"bzz-raw://bcbccd294d4a3ceaf21abe19206dcd4e0eae0cbb03d8f4c0c1afa7e8d808ec5a",
+				"dweb:/ipfs/QmVJ3wDfRSt8ws76M6ZnCZLLxPgtpNsPc1cMz3Y37i9Yyf"
 			]
 		}
 	},
