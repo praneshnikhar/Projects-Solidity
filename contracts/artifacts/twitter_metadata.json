@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
@@ -15,6 +15,25 @@
 				],
 				"name": "createTweet",
 				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "getTweet",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -53,7 +72,7 @@
 		"compilationTarget": {
 			"contracts/twitter.sol": "twitter"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -66,11 +85,11 @@
 	},
 	"sources": {
 		"contracts/twitter.sol": {
-			"keccak256": "0xe243c228e5c1ec69fc87b5b7e2ace1f1c3cd48065f7c01a6214d069b3cfe63fc",
+			"keccak256": "0x7224dbf300b685c7cb7853dbf177f06fcdd7c1f486d59be2efe7ac3a2b0993f1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d0dc690864fcd78c1adb832c6a8feb575197b8b922c2044c637e106efcfd15f9",
-				"dweb:/ipfs/QmRD1CPWQsrY7FtME5xrpUzaNe4xuDgidc7iR25bBw9kqs"
+				"bzz-raw://a81bf109b7b7b351420165d24629d92029773276c08c85cf435f166f543f59e4",
+				"dweb:/ipfs/QmTqsgh4WiDA8ow2foMYfDfTParz8X4gBDPerqFamN2av4"
 			]
 		}
 	},
