@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.18;
+pragma solidity ^0.8.30;
 
-contract twitter {
-    uint16 constant MAX_TWEET_LENGTH = 280;
+contract Twitter {
+    uint16 public MAX_TWEET_LENGTH = 280;
 
     struct Tweet{
         address author;
@@ -12,6 +12,22 @@ contract twitter {
     }
 
     mapping(address => Tweet[]) public tweets;
+
+    address public owner;
+
+    constructor(){
+         owner = msg.sender;
+    }
+
+    modifier onlyOwner(){
+        require(msg.sender == owner,"You are not the owner");
+        _;
+    }
+
+    function changeTweetLength(uint16 newTweetLength) public onlyOwner {
+            MAX_TWEET_LENGTH = newTweetLength;
+
+    }
 
     function createTweet(string memory _tweet) public {
        //conditional
