@@ -11,6 +11,68 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "author",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "content",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "TweetCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "liker",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "tweetAuthor",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tweetId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newLikeCount",
+						"type": "uint256"
+					}
+				],
+				"name": "TweetLiked",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "MAX_TWEET_LENGTH",
 				"outputs": [
@@ -215,6 +277,24 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "author",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "unlikeTweet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -245,11 +325,11 @@
 	},
 	"sources": {
 		"contracts/twitter.sol": {
-			"keccak256": "0x95d17732098b9888e0d6879dc2252bc809ae86461ec159d02585148cbe0c9eed",
+			"keccak256": "0x9d3cf2cc4f3a548c38bbcfd5a254f0b5e4588f288ed2b2db6f4a84abc06de7fb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5f62cf7367d736347bb6a448aefff722fefe510e06c5c6b4627bddb96f38ba92",
-				"dweb:/ipfs/Qmb6cWaHzKQoM2dBAzkKCFdhxrHekcwitbAZMBd58aZwbK"
+				"bzz-raw://f8a0c041e5a4d7d458cfc63f0e158d0f4f15140722f506f38925453ac44272ee",
+				"dweb:/ipfs/QmNrhwQnWVedAqTyidQk9uHp6cy7Aqwk2VGZyW1qjFZeAd"
 			]
 		}
 	},
