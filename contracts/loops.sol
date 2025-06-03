@@ -26,8 +26,9 @@ contract ExpenseTracker{
         }
 
         return totalExpenses;
+        
     }
-    
+
 
 }
 
